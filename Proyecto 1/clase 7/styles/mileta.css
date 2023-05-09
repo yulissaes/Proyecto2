@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+         "Logo quiensoy servicios"
+         "Logo productos contacto";
+}
+
+.Logo{
+    grid-area: Logo;
+    background-color: rgb(34, 112, 112);
+}
+
+.quiensoy{
+    grid-area: quiensoy;
+    background-color: rgb(108, 56, 56);
+}
+
+.servicios{
+    grid-area: servicios;
+    background-color: brown;
+}
+
+.productos{
+    grid-area: productos;
+    background-color: blueviolet;
+}
+
+.contacto{
+    grid-area: contacto;
+    background-color: blue;
+}
+
+.Container > div{
+    display: grid;
+    place-items: center;
+}
+
+@media screen and (max-width:480px){
+    .Container{
+        display: flex;
+        flex-direction: column;
+    }
+    .Container > * {
+        flex: 1;
+    
+    }
+    .Logo{
+        flex: 3;
+        flex-grow: 3;
+        flex-shrink: 1;
+        flex-basis: 0;
+    }
+
+}

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:wght@300;400;700&display=swap');
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Antonio', sans-serif;
+}
+header{
+    background-color: rgb(66, 192, 214);
+    display: flex;
+    gap: 20px;
+    grid-gap: 20px;
+}
+
+.Logo {
+    width: 100px;
+    color: aqua;
+}
+.Naver{
+    display: flex;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    grid-gap: 10px;
+
+}
+.menu__item a{
+    background: beige;
+    border: 5px solid white;
+    color: rgb(135, 112, 112);
+    text-decoration: none;
+    padding: 1rem;
+    transition: all 2s;
+}
+
+.menu__item a:hover{
+    background-color: rgb(157, 97, 152);
+    color: rgb(123, 195, 195);
+}
+.menu__item:nth-child(2) a {
+    background: rgb(182, 111, 111);
+}
+
+
+.menu__item.active a {
+    text-decoration: underline  double;
+}
+
+.imagenprincipal{
+    height: 80vh;
+    background-image: url("../imagenes/curso-de-Programacion-Orientada-a-Objetos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 200px;
+}
+
+.imagenprincipal h2{
+    color: rgb(18, 16, 16);
+    background-color: #e9f0f2e8;
+    padding-inline: 20px;
+    border-color: black;
+}
+.imagenprincipal p{
+    color: rgb(247, 247, 247);
+    text-align: center;
+}
+.tarjetitas{
+    padding: 60px;
+    display: flex;
+    gap: 30px;
+}
+.tarjetita {
+    background-color: rgb(185, 144, 203);
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    border-color: black;
+
+}
+.tarjetita__imagen{
+    max-width: 100%;
+    border-bottom: red;
+}
+
+.Informacion{
+    padding-inline: 60px;
+
+}
+h4{
+    text-align: center;
+}
+button{
+    background-color: rgb(131, 133, 133);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.pie {
+    background-color: rgb(102, 144, 140);
+    color: rgb(19, 19, 19);
+    padding-block: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarjetitados{
+    flex: 1s;
+}

@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.cajitas{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    width: 900px;
+    background-color: rgb(127, 176, 176);
+}
+
+.cajita{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(20, 73, 116);
+    display: grid;
+    place-items: center;
+}
+
+.tarjetitas{
+    display: flex;
+    width: 1100px;
+    gap: 3rem;
+}
+
+.tarjetita{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(122, 115, 106);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.tarjetitas img{
+    max-width: 100%;
+}
+
+
+
+
+
+.cajita{
+    transition-property: all;
+    transition-duration: 3s;
+    transition-delay: 0s;
+    transition-timing-function: cubic-bezier(.12,.43,.92,.1,.3);
+    
+}
+
+.cajita1:hover{
+    width: 100%;
+    background-color: rgb(182, 224, 209);
+}
+.cajita2{
+    animation-name: cajita2Movimiento;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: 4;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes cajita2Movimiento{
+    from{
+        width: 300px;
+        background-color: rgb(214, 250, 238);
+    }
+    to{
+        width: 100%;
+        background-color: rgb(216, 235, 215);
+    }
+        
+}
+
+.cajita3 {
+    background: rgb(6, 86, 59);
+    background: linear-gradient(106deg rgb(78, 21, 178) 3s, rgb(27, 98, 157)44s rgba(red, green, blue, alpha));
+}
+
+.cajita{
+    background-image: linear-gradient(to top, #0c446b 0%, #c971b8 100%);
+}
+
+
+.cajita3{
+    transition: transform 1s;
+}
+
+.cajita3:hover{
+    transform: rotate(140deg) scale(2) skew(30deg);
+}
+
+.tarjetita{
+    transition: all -3s;
+    
+  
+}
+
+.tarjetita:hover{
+    transform: scale(1.1) translateY(-40px);
+    box-shadow: rgb(59, 59, 92) 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+}
+.cajita3{
+    -webkit-animation: roll-in-left -6s ease-out both;
+    animation: roll-in-left 0s ease-out both;
+    animation-delay: 8s;}
+
+.Cajita4{
+    -webkit-animation: roll-in-left -6s ease-out both;
+    animation: roll-in-left 0s ease-out both;
+    animation-delay: 8s;
+    transition: all -3s;
+
+}
+
+
+
+
+
+@-webkit-keyframes extend {
+    0% {
+        width: 600px;
+        height: 200px;
+        border-radius: 100px;
+        } 10% {
+        width: 610px;
+        height: 210px;
+        background: #fff;
+        margin-left: - 5px;
+        margin-top: - 5px;
+        } 20% {
+        width: 600px;
+        height: 200px;
+        background: #6fb07f;
+        margin-left: 0px;
+        margin-top: 0px;
+        } 100% {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        margin-left: 190px;
+        background: #6fb07f;
+        }
+    }
+
